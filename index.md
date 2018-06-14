@@ -46,6 +46,7 @@ To acheive that, we are developing rephotography application for Android.
   )
 
 ## Presentatoin.
+1. 小田川信哉, 奥村俊夫, 道下亮, __片木仁.__(2018) :Google Earth EngineとFusion Tablesを用いた水稲研究支援システムの試行, 日本リモートセンシング学会第64回（平成30年度春季）学術講演会, 東京大学柏キャンパス, 2018年5月18日.
 1. Y.Takane, H.Kondo, H.Kusaka, __J.Katagi__, O.Nagafuchi, K.Nakazawa, N.Kaneyas and Y.Miyakami (2018): Foehnlike wind with a traditional foehn effect plus dry diabatic heating form the ground surface contribute to high temperatures at the end of a leeward area, International Workshop on Wind-Related Disasters and Mitigation, Tohoku University, Sendai, Mar.11-14.
 1. __片木仁__, 奈佐原顕郎, 道津正徳, 今村功一, 山之口勤, 田殿武雄. (2017): 多時期土地被覆情報データセット"SACLAJ"のための再撮影アプリ開発, 日本リモートセンシング学会第63回（平成29年度秋季）学術講演会, 酪農学園大学, 江別市, 2017年11月21日.
 1. __片木仁__ (2017)：土地被覆と再撮影, FOSS4G Tokyo 2017 大懇親会 LT, 東京大学駒場リサーチキャンパス, 2016年9月16日. (Lightning Talks) 
