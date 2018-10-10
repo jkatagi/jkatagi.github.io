@@ -1,6 +1,7 @@
 module.exports = {
     title: "jkatagi's pages",
     base: '/',
+    dest: 'docs',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
