@@ -2,9 +2,5 @@
   "scripts": {
     "docs:dev": "vuepress dev src",
     "docs:build": "vuepress build src"
-  },
-  "dependencies": {
-    "markdown-it-katex": "^2.0.3",
-    "vuepress": "^0.14.4"
   }
 }
