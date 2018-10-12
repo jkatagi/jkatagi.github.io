@@ -7,9 +7,8 @@ install:
 
 script:
     - npm run docs:build
-after_success:
     - git commit -a -m "build docs (travis)"
-    - git subtree push --prefix docs/ origin master
+    - git subtree push --quiet --prefix docs/ origin master >/dev/null 2>&1
 
 cache:
     directories:
