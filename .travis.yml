@@ -11,4 +11,4 @@ script:
     - git config --global user.emal "kemisknkn37@gmail.com"
     - git checkout $TRAVIS_BRANCH
     - npm run docs:build
-      git subtree push --prefix docs/ origin master
+    - git subtree push --prefix docs/ origin master
