@@ -1,15 +1,23 @@
 language: node_js
 node_js:
-    - "10"
-
+- '10'
 install:
-    - npm i -g vuepress
-
+- npm i -g vuepress
 script:
-    - npm run docs:build
-    - git commit -a -m "build docs (travis)"
-    - git subtree push --quiet --prefix docs/ origin master >/dev/null 2>&1
-
+- npm run docs:build
 cache:
-    directories:
-        - "node_modules"
+  directories:
+  - node_modules
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs
+  github-token: "$GITHUB_TOKEN"
+  repo: jkatagi/jkatagi.github.io
+  keep-history: true
+  target-branch: master
+  on:
+    branch: master
+env:
+  matrix:
+    secure: z43OQfuMKLmuZX4D0Ie77md7Jpji17yYbmQh5UHEaUKzyMod34nOPqe+n46hzWxRFv9C8emT3TDNaczGfxdNLYT0hPGUC6677o//m0AkbdIwCKUCReYQ2SpFdAOzI4Ym4YamwyyezCBSkL4PplsZR79K6nHuFJYTHggoE2ASIUutLdmXOcUb1Ogv4mvIudqow0MLVyX2kWcjWfx2xVnMxZRjqNlhEZqeBT656PrqNtjFAdPiW0l0WIsL2G6qlP/tjPC5UwpIIh/gL3ZubKTM/xuUlSiqOhi+HUNQ27r6+9jT2nB16zcQTUGN1Dquv2DPxe57Maz1CUwkn4MxbqrSDaIDcRLRDp18wLH+0Zfjx1CP2600g2oXdn9GJdLgmjrH411DG1GE0Kjko3Q/LSSZhwLx/nT5ywzQLxc8lbcMPQIdHAb6EEoMR+wQ8BpnPCL3EmFKKLai82Z5ty6EWMCdU4u5OFeK5wixYpx6ojOmzP5bkVuQ6BBz/U+UGIoTJssRAtpnuyYSIRj7cF0s6MLrLb0Tfq0ycpZDTCxbQMyBW9MCr4SGUHvEWD14rdnynm8CA/V1pb7bmyUKtmpFAM9L7jtw3BCXwV8YahZhV2zGxLeD4whUCh1NRUp+AgeuL2tUxq8rgyRr5EU7JwOltUsiXtDDr11IkiR92ngkf+2dZSw=
