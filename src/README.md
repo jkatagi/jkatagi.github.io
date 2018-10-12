@@ -48,8 +48,6 @@ To acheive that, we are developing rephotography application for Android.
 1. Takane, Y., H. Kondo, H. Kusaka, __J. Katagi__, O. Nagafuchi, K. Nakazawa, N. Kaneyasu, and Y. Miyakami. (2017): Foehn-like wind with a traditional foehn effect plus dry diabatic heating from the ground surface contribute to high temperatures at the end of a leeward area. _Journal of Applied Meteorology and Climatology_, DOI: http://dx.doi.org/10.1175/JAMC-D-16-0257.1.
 
 ## Presentatoin (plan).
-[](
-  )
 
 ## Presentatoin.
 1. 小田川信哉, 奥村俊夫, 道下亮, __片木仁.__(2018) :Google Earth EngineとFusion Tablesを用いた水稲研究支援システムの試行, 日本リモートセンシング学会第64回（平成30年度春季）学術講演会, 東京大学柏キャンパス, 2018年5月18日.
