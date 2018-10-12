@@ -38,6 +38,11 @@ What is important at that time is to take photo land cover change at the same sp
 To acheive that, we are developing rephotography application for Android.
 
 * * *
+# Products.
+- [HRLULC (High Resolution Land Use and Land Cover) 10 m resolution map of Japan.](https://www.eorc.jaxa.jp/ALOS/lulc/jlulc_jpn.htm)
+  - A map showing the average land covering aspcet between 2006 and 2011.
+  - It's also a product of my bachelor's graduation research.
+* * *
 
 # Research perfomance.
 
