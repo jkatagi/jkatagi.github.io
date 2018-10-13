@@ -1,8 +1,10 @@
 ---
 sidebar: auto
+prev: ../chap10/
+next: false
 ---
 
-# おわりに
+# 第11章：おわりに
 
 Code Editor→ Scripts→
 Examplesには本書では取り扱えなかった様々なサンプルがあります。
