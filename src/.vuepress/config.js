@@ -2,6 +2,11 @@ module.exports = {
     title: "jkatagi's pages",
     base: '/',
     dest: 'docs',
+    markdown: {
+        config: md => {
+            md.use(require("markdown-it-katex"));
+        }
+    },
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },

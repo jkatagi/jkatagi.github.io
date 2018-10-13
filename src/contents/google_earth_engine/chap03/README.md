@@ -25,10 +25,15 @@ Google Earth Engineでも再生処理済みの画像を使うことなります�
 Examplesをクリックしてみましょう。
 このレポジトリには、Googleが用意した様々なスクリプトが含まれています。
 まずは一番上のImage → From Nameというスクリプトを開いてみましょう。
-
+<a :href="$withBase('/chap03/from_name1.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name1.png')" alt="">
+</a>
 このようなスクリプトが表示されます。
 そうしたら画面中央上部のRUNをクリックしてください。
 すると以下のような画像が表示されるはずです。
+<a :href="$withBase('/chap03/from_name2.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name2.png')" alt="">
+</a>
 もし表示されない場合、右側のConsoleに赤い背景で何か文字が表示されるはずです。
 考えられるのはインターネットに繋がっていないか、何かソースコードをいじってしまったかです。
 その場合はもう一度From Nameを開きなおしましょう。
@@ -51,16 +56,24 @@ JavaScriptのコメントは半角スラッシュ2つ(//)で始まります。
 括弧の中（引数といいます）の左から緯度、経度、ズームレベルです。
 試しにこの値を変えてみましょう。
 ズームレベルを5から10にすると、先ほどよりズームしたことが分かります。
+<a :href="$withBase('/chap03/from_name3.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name3.png')" alt="">
+</a>
 次に16にしてもう一度実行してみましょう。
+<a :href="$withBase('/chap03/from_name4.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name4.png')" alt="">
+</a>
 すると今度は近すぎて何がなんだか分からない感じになってしまいました。
 思い切ってこの値を100にしてみましょう。
-すると実行に失敗し、Consoleという画面で“Zoom must be within \[0’,
-24\].”というエラーメッセージが表示されます。
+<a :href="$withBase('/chap03/from_name5.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name5.png')" alt="">
+</a>
+すると実行に失敗し、Consoleという画面で“Zoom must be within \[0’,24\].”というエラーメッセージが表示されます。
 どうやらズームレベルは0から24までしか対応していないようです。
 
 このように実行に失敗してもエラーがその原因を教えてくれます。
 また万が一直し方が分からなくなっても（保存せずに終了すれば）最初の状態に戻せるので、どんどん試していきましょう。
-とりあえず画像が表示されるズームレベルに値を適当に（もちろん0から24の間で）設定しておきましょう。
+とりあえず画像が表示されるズームレベルに値を適当に（もちろん0から24の間で。ここでは8とします）設定しておきましょう。
 
 さて、ズームレベルの次は緯度経度の値を変えてみましょう。
 アメリカだと地理感が働かないので、日本に移動してみます。
@@ -69,6 +82,9 @@ JavaScriptのコメントは半角スラッシュ2つ(//)で始まります。
 ```javascript
 Map.setCenter(140, 36, 8);
 ```
+<a :href="$withBase('/chap03/from_name_japan1.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_japan1.png')" alt="">
+</a>
 
 黒く見えているところが標高が低い場所で、白く見えているところが標高が高い場所です。
 本州の中央付近に白いところ（標高が高い場所）が集中しています。
@@ -98,6 +114,9 @@ Mapが表示されており、その上にSRTMの画像を重ねて表示させ�
 ```javascript
 Map.addLayer(image, {min: 0, max: 100}, 'SRTM');
 ```
+<a :href="$withBase('/chap03/from_name_japan2.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_japan2.png')" alt="">
+</a>
 
 関東平野がはっきり見えました。
 こうしてみると関東平野の中でも標高の高い場所・低い場所があることがわかります。
@@ -105,8 +124,14 @@ Map.addLayer(image, {min: 0, max: 100}, 'SRTM');
 この上にカーソルを持っていくとSRTMという文字が現れます。
 SRTMの文字の右側のスライドバーを左に動かしてみましょう。
 すると下の地図と重ねて表示することができます。
+<a :href="$withBase('/chap03/from_name_japan3.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_japan3.png')" alt="">
+</a>
 いろんな都市をズームしてみてみると，いつもとは違った標高という情報が加味され，一味違う地図になります。
 試しに東京を見てみましょう。
+<a :href="$withBase('/chap03/from_name_japan4.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_japan4.png')" alt="">
+</a>
 東京の下町は真っ黒（かなり低地）であることがわかります。
 しかしその西側は比較的高地であることがわかります。
 地図を確認してみると新宿あたりであることがわかります。
@@ -114,10 +139,17 @@ SRTMの文字の右側のスライドバーを左に動かしてみましょう�
 すなわち山の近くに沿線があるから「山手線」なのです。
 
 次に府中のあたりに注目してみます。 Google Earth
-Engineのロゴの右に府中と入力すると（スペースは押さないでください）PLACESに場所の候補が出てきます。ここでいいt版上のJapan,
-Tokyo,府中市をクリックします。すると府中に画像の中央が設定されます。
+Engineのロゴの右に府中と入力すると（スペースは押さないでください）PLACESに場所の候補が出てきます。
+<a :href="$withBase('/chap03/from_name_fuchu1.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_fuchu1.png')" alt="">
+</a>
+ここで一番上のJapan,
+Tokyo,府中市（ブラウザの設定によっては日本、東京都府中市）をクリックします。すると府中に画像の中央が設定されます。
+<a :href="$withBase('/chap03/from_name_fuchu2.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_fuchu2.png')" alt="">
+</a>
 さて，府中に注目してみると北から南に向けて色が三段階（高い→低い）と段上になっていることがわかります。これは河川により形成された河岸段丘です。
-このようにレイヤを重ねて解析することはGIS（）では度々行われる手法です。
+このようにレイヤを重ねて解析することはGISでは度々行われる手法です。
 
 続いて場所を変えてもう少し富士山を目立たせてみましょう。 最小値3000
 m、最大値4000 mとしてみましょう。
@@ -130,6 +162,9 @@ Map.addLayer(image, {min: 3000, max: 4000}, 'SRTM');
 ```
 
 すると1点だけ白く表示されます。 これが富士山の山頂です。
+<a :href="$withBase('/chap03/from_name_fuji1.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_fuji1.png')" alt="">
+</a>
 
 色を目立たせるために、白と黒を逆転させてみましょう。
 
@@ -143,11 +178,17 @@ Map.addLayer(image, {min: 3000, max: 4000, palette: ['FFFFFF', '000000']}, 'SRTM
 今回は白に対応するFFFFFFと黒に対応する000000を用いました。
 実行してみると実際に色が反転したことが分かります。
 
+<a :href="$withBase('/chap03/from_name_fuji2.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_fuji2.png')" alt="">
+</a>
 今度は富士山の標高値を調べてみましょう。
 Map.setCenter()を富士山付近に変更してもいいですが，ここではマップ画面にマウスを持って行き、ホイールで拡大してみましょう。
 その後右上の画面にInspectorというボタンをクリックしてください。
 これは地図上のレイヤーの値を調べるときに使うものです。
 黒くなっているところを適当にクリックすると、右上の画面に値が表示されます。
+<a :href="$withBase('/chap03/from_name_fuji3.png')" target="_blank">
+  <img :src="$withBase('/chap03/from_name_fuji3.png')" alt="">
+</a>
 標高はPixels→ SRTM → elevationという欄に表示されます（約3500 m）。
 
 RGB画像の表示（Landsat8）
@@ -164,16 +205,25 @@ Landsatで撮られた画像はもともとは有償でしか使えなかった�
 まずはスクリプトを格納するレポジトリを作成しましょう。 Code
 Editorの左上の画面のNEWをクリックし、Repositoryを選択します。
 そして空欄に名前を入力（ここではTutorialとしましょう）し、Createをクリックします。
+<a :href="$withBase('/chap03/make_repository.png')" target="_blank">
+  <img :src="$withBase('/chap03/make_repository.png')" alt="">
+</a>
 するとOwnerの中に
 users/your\_name/Tutorialというレポジトリが作成されます（your\_nameはあなたのGoogleアカウントです）。
 
 続いてスクリプトを作成しましょう。
 再びNEWをクリックし、今度はFileを選択します。
 users/your\_name/Tutorialを選択し、UntitledFileを削除してlandsat8\_showingと入力し、OKをクリックします。
+<a :href="$withBase('/chap03/landsat8_1.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_1.png')" alt="">
+</a>
 これでスクリプトが作成されました。
 
 スクリプトを早速編集してみましょう。
-users/your\_name/Tutorialの中のlandsat8\_showingをクリックします。
+users/your\_name/Tutorialの中のlandsat8\_showingをクリックします（先程のFrom\_nameスクリプトに変更を加えた場合、クリック時にファイルを置き換えるかどうかを聞かれますのでYesを選択してください）。
+<a :href="$withBase('/chap03/landsat8_2.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_2.png')" alt="">
+</a>
 
 まずはじめに画像オブジェクトを作成します。 Google Earth
 Engineでは、データセットをImageCollection IDというもので識別します。
@@ -181,12 +231,20 @@ Engineでは、データセットをImageCollection IDというもので識別�
 このIDを調べるには、検索エンジン（Goolge Earth
 Engineのロゴの右隣の欄）を用います。 Landsat
 8と入力すると、候補となるデータ名がRASTERという文字の下に出てきます。
+<a :href="$withBase('/chap03/landsat8_3.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_3.png')" alt="">
+</a>
 RASTERはラスター画像を意味します（コラム参照）。 USGS Landsat 8 Surface
-Reflectanceを選びましょう。
+Reflectance Tier1を選びましょう。
 
 するとプロダクトの概要や観測バンドの情報、観測期間などが表示されます。
+<a :href="$withBase('/chap03/landsat8_4.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_4.png')" alt="">
+</a>
 Importの上にImageCollection
-IDという欄があり、そこに’LANDSAT/LC08/T1\_SR’と書かれているので、これをコピーします（なお、その下のImportを押すと自動的に変数が宣言されますが，今回は押しません）。
+IDという欄があり、そこに’LANDSAT/LC08/T1\_SR’と書かれているので、これをコピーし、xを押してウィンドウを閉じます（なお、その下のImportを押すと自動的に変数が宣言されますが，今回は押しません）。
+
+次に以下のようなスクリプトを入力します。
 
 <!--
 ``` {caption="Landsat" 8="" startFrom="1"}
@@ -199,16 +257,21 @@ Map.setCenter(140, 36, 8);
 Map.addLayer(landsat8_img);
 ```
 
-おっと、“Layer 1: Layer error: Image.load: Asset
+画像を読み込み、画像の中心座標をセットし、その画像を表示するだけの簡単なスクリプトです。
+これを実行（Runボタンをクリック）してみましょう。
+<a :href="$withBase('/chap03/landsat8_5.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_5.png')" alt="">
+</a>
+
+おっと、`Layer 1: Layer error: Image.load: Asset
 ’LANDSAT/LC08/C01/T1\_SR’ is not an
-Image.”というエラーが表示されました。
-…T1\_SRというのはイメージではないと言っています。
-これは日付を指定していなかったためです。
+Image.”`いうエラーが表示されました。
+これは’LANDSAT/LC08/C01/T1\_SR’というのは画像ではないと言っています。
+これは衛星画像の日付（取得した日付）を指定していなかったためです。
 
 日付を指定する方法は2つあります。
 1つは日付に対応するファイル名（例えばxxx）をT1\_SRの下に追加（T1\_SR/xxx）することです。
 この方法では各衛星画像のファイル命名規則を知っていなければなりません。
-
 もうひとつの方法は日付の期間を指定する方法です。
 今回は後者でやってみましょう。
 
@@ -243,6 +306,10 @@ Map.addLayer(landsat8_img, {bands: ['B4', 'B3', 'B2']} );
 ```
 
 これを実行すると、薄暗い色の画像が表示されます。
+<a :href="$withBase('/chap03/landsat8_6.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_6.png')" alt="">
+</a>
+
 これは画像の最大値・最小値を適切に設定していなかったためです。
 bandsの隣に最小値と最大値を入力してみましょう。
 最小値、最大値は適当に設定しました。
@@ -254,7 +321,10 @@ bandsの隣に最小値と最大値を入力してみましょう。
 Map.addLayer(landsat8_img, {bands: ['B4', 'B3', 'B2'], min :0, max:3000 });
 ```
 
-今度はいい感じに表示されました。
+再度実行すると、今度はいい感じに表示されました。
+<a :href="$withBase('/chap03/landsat8_7.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_7.png')" alt="">
+</a>
 色合いを決めるパラメータが少し長くなり、Map.addLayer()の行が長くなってきたので、vizParamsという名前の変数にパラメータをまとめておきましょう。
 
 <!--
@@ -265,22 +335,34 @@ var vizParams = {bands: ['B4', 'B3', 'B2'], min:0, max:3000};
 Map.addLayer(landsat8_img, vizParams);
 ```
 
-このようにしておくと、見た目がすっきりします。
+このようにしておくと、コードの見た目がすっきりします（実行結果は変わりません）。
 
-さて、せっかく表示することができたので、この画像をじっくり見てみましょう。
+さて、せっかく衛星画像を表示することができたので、この画像をじっくり見てみましょう。
 一見するとすごく鮮明に見えますが、マウスを使ってズームしてみるとズームレベル14あたりからぼやけて見えてきます。
+<a :href="$withBase('/chap03/landsat8_8.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_8.png')" alt="">
+</a>
 更に拡大して見ると、かなりギザギザしていることが分かります。
+<a :href="$withBase('/chap03/landsat8_9.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_9.png')" alt="">
+</a>
 
 試しに航空写真に切り替え、Layers 1を非表示にしてみましょう。
 すると航空写真との差が鮮明に分かります。
-このように1画素の大きさを空間解像度と呼びます。
+<a :href="$withBase('/chap03/landsat8_10.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_10.png')" alt="">
+</a>
+このような画像の粗さ（1画素の大きさ）を空間解像度と呼びます。
 Landsat8の空間解像度は約30 m、すなわち1画素の大きさは約30 mです。
 
-今度は逆にズームアウトしてみましょう。
-すると画像同士が重なりあったりしているのが見て取れます。
+再度Layers 1を表示し、今度は逆にズームアウトしてみましょう。
+すると画像同士が継ぎ接ぎになって表示されていることが見て取れます。
+<a :href="$withBase('/chap03/landsat8_11.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_11.png')" alt="">
+</a>
 人工衛星による観測は、一度に地球全体を観測することが出来ません。
-そのためある一定の幅を観測しながら、地球をぐるぐる回り続けているのです。
-ちなみにLandsat8の場合、この観測幅は約 km です。
+そのため、ある一定の横幅の範囲を観測しながら、地球をぐるぐる回り続けているのです。
+ちなみにLandsat8の場合、この観測幅は約185 km です。
 
 なお、今回表示させたかった場所（北緯36度東経140度）以外の画像を読み込みたくない場合、ImageCollection()にfilterBounds()を追加します。
 追加した最終バージョンを以下に載せます。
@@ -298,10 +380,13 @@ var point = ee.Geometry.Point(lon, lat);
 var landsat8_img = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
   .filterBounds(point)
   .filterDate(start, finish);
-Map.setCenter(lon, lat, 13);
+Map.setCenter(lon, lat, 8);
 var vizParams = {bands: ['B4', 'B3', 'B2'], min:0, max:3000};
 Map.addLayer(landsat8_img, vizParams);
 ```
+<a :href="$withBase('/chap03/landsat8_12.png')" target="_blank">
+  <img :src="$withBase('/chap03/landsat8_12.png')" alt="">
+</a>
 
 表示させたい場所の緯度経度はそれぞれlat、lonという変数に格納しておきました。
 今回の例では緯度経度を(1)画像選択；filterBounds()(2)表示範囲の設定；Map.setCenter()の2箇所で使用しています。
@@ -309,39 +394,47 @@ Map.addLayer(landsat8_img, vizParams);
 2箇所くらいなら大丈夫でしょと思うかもしれませんが、これが5箇所・10箇所と増えていくと、直し忘れが出てきたりと大変です。
 変数を用いることにより、変数を宣言している箇所のみを修正すればいいことになります。
 
-なお、今回はズームアウトしても、画像が一枚しか表示されていないことが分かります。
+ここまでの変更を保存しておきましょう（Saveボタンをクリック）。
 
 高分解能衛星：Sentinel-2
 ------------------------
 
 今度はLandsat
 8より解像度の高い、Sentinel-2という衛星が観測した画像を表示させます。
+先ほどと同様に新しいスクリプトを作りましょう（名前をsentinel2\_showingとしました）。
 Sentinel-2はコペルニクス計画という地球観測ミッションを負っているESA（European
 Space Agency, 欧州宇宙機関）という機関が打ち上げた衛星です。
 全部で12の波長帯を観測していますが、今回はそのうちの可視光（赤・青・緑）と近赤外の合わせて4バンドを使用します。
 
 まずはじめにSentinel-2のプロダクトの仕様を調べてみましょう。
 GoogleEarthEngineの横の検索欄に“Sentinel-2”と入力します。
-するとRASTERSにSentinel-2
-MSIと表示されるので，それをクリックしてください。
+するとRASTERSにSentinel-2 MSI: MultiSpectral Instrument, Level-1C
+と表示されるので，それをクリックしてください。
 先程説明したSentinel-2の概要が最初に書かれており，その下に“Bands”という情報があります。
+<a :href="$withBase('/chap03/sentinel2_1.png')" target="_blank">
+  <img :src="$withBase('/chap03/sentinel2_1.png')" alt="">
+</a>
 今回使用する3つのバンド（赤・緑・青）はそれぞれB4（赤）・B3（緑）・B2（青）ということがわかりました。
 
-さてでは実際にSentinel-2が観測した画像を表示させてみましょう。
+では実際にSentinel-2が観測した画像を表示させてみましょう。
 Landsat8の例ではImportの上のImageCollection
 IDをコピペしてScriptに入力しました。 今度は直接Importしてみましょう。
 そのためにはImportをクリックします。
+<a :href="$withBase('/chap03/sentinel2_2.png')" target="_blank">
+  <img :src="$withBase('/chap03/sentinel2_2.png')" alt="">
+</a>
 するとScriptの上部に以下のような文字列が現れたかと思います。
-
-    Imports (1 entry)
-    var imageCollection: ImageCollection "Sentinel-2 MSI: MultiSpectral Instrument, Leve-1C"
+```
+Imports (1 entry)
+var imageCollection: ImageCollection "Sentinel-2 MSI: MultiSpectral Instrument, Leve-1C"
+```
+<a :href="$withBase('/chap03/sentinel2_3.png')" target="_blank">
+  <img :src="$withBase('/chap03/sentinel2_3.png')" alt="">
+</a>
 
 これでSentinel-2のMSIデータセットをimageCollectionという変数で宣言したことになります。
 imageCollectionをクリックすると名前を変えることもできます。
-ここではsentinel2ImageCollectionという名前にしてみましょう。
-
-    Imports (1 entry)
-    var sentinel2ImageCollection: ImageCollection "Sentinel-2 MSI: MultiSpectral Instrument, Leve-1C"
+ここではsentinel2ImageCollectionという名前にしてみましょう（imageのiを大文字にしています）。
 
 そしてLandsat8の例と同じ地点・同じ時期の画像を表示させてみましょう。
 先程のScriptを再掲します。
@@ -393,7 +486,10 @@ var vizParams = {bands: ['B4', 'B3', 'B2'], min:0, max:3000};
 Map.addLayer(sentinel2_img, vizParams);
 ```
 
-これを走らせてみるとLandsat8に比べてSentinel-2のほうが解像度が高いことがわかります。
+これを実行するとLandsat8に比べてSentinel-2のほうが空間解像度が高いことがわかります。
+<a :href="$withBase('/chap03/sentinel2_4.png')" target="_blank">
+  <img :src="$withBase('/chap03/sentinel2_4.png')" alt="">
+</a>
 2つの画像を重ねて表示させるともっと分かりやすいと思われるので，以下に2枚表示させるコードを掲載します。
 
 ```javascript
@@ -419,6 +515,9 @@ Map.addLayer(landsat8_img, landsat8VizParams, "landsat8");
 ```
 
 レイヤをわかりやすくするために，Map.addLayerの3つ目の引数にレイヤ名を渡しました。
+<a :href="$withBase('/chap03/sentinel2_5.png')" target="_blank">
+  <img :src="$withBase('/chap03/sentinel2_5.png')" alt="">
+</a>
 MapのLayersから書くレイヤを表示・非表示させたりズームしてみたりして解像度の違いを体感してみましょう。
 
 中分解能衛星：MODIS
@@ -432,7 +531,7 @@ MODISが観測した画像は様々な処理が施され、プロダクトとし
 今回はそのプロダクトの一つであるMOD09A1を使います。
 MOD09A1は8日間の平均を取った画像で、空間解像度は500 mです。
 
-先程のLandsat8・Sentinel-2の二枚の画像を表示させるスクリプトに追記していきましょう。
+新しくスクリプトを作成し、先程のLandsat8・Sentinel-2の二枚の画像を表示させるスクリプトをコピーして追記していきましょう。
 まずはじめにSearchにMOD09A1と入力します。
 すると候補が2つ出てくるので，今回はTerra衛星の方（MOD09A1.006）を選びましょう。
 Bandsの情報には色情報が書かれていないので，波長から色を考えます。
@@ -470,8 +569,11 @@ Map.addLayer(sentinel2_img, sentinel2VizParams, "sentinel2");
 Map.addLayer(landsat8_img, landsat8VizParams, "landsat8");
 Map.addLayer(modis_img, modisVizParams, "modis");
 ```
+実行するとMODISの画像が斜めになっていることがわかります。
+<a :href="$withBase('/chap03/modis_1.png')" target="_blank">
+  <img :src="$withBase('/chap03/modis_1.png')" alt="">
+</a>
 
-おっと，MODISの画像が斜めになっているようです。
 これを修正するためにはリプロジェクション（再投影）という概念を学ばなければなりません。
 
 リプロジェクションとは…
@@ -487,18 +589,25 @@ var modis_reprojected_img = modis_img.reproject('EPSG:4326', null, 500);
 ```
 
 さてこれを走らせると
-
-    modis_img.reproject is not a function
+```
+modis_img.reproject is not a function
+```
 
 というエラーメッセージがConsoleに表示されていますが，ちょっとわかりにくいエラーです。
+<a :href="$withBase('/chap03/modis_2.png')" target="_blank">
+  <img :src="$withBase('/chap03/modis_2.png')" alt="">
+</a>
 ここでDocsを使ってreproject関数を調べてみましょう。
 Scriptsの横のDocsをクリックし，reprojectと入力します。
-するとee.Imageというクラスの関数であることがわかります。
+するとee.Imageというクラスのメソッドであることがわかります。
+<a :href="$withBase('/chap03/modis_3.png')" target="_blank">
+  <img :src="$withBase('/chap03/modis_3.png')" alt="">
+</a>
 
 もう一度Scriptに戻ってバグを探しましょう。
 デバッグの常套手段としてprintデバッグというのがあります。
 これはprint()関数を利用して情報を出力し，バグを探すというものです。
-modis\_imgの下（modis\_reprojected\_imgの上）に以下を挿入します。
+modis\_reprojected\_imgの行を一旦コメントアウトし、modis\_imgの下に以下を挿入します。
 
 ```javascript
 print(modis_img);
@@ -507,8 +616,11 @@ print(modis_img);
 走らせるとConsoleに“ImageCollection MODIS/006/MOD09A1 (4
 elements)”という情報が表示されます。
 featuresをクリックすると，modis\_imgは4つの画像が収納されていることがわかります。
+<a :href="$withBase('/chap03/modis_4.png')" target="_blank">
+  <img :src="$withBase('/chap03/modis_4.png')" alt="">
+</a>
 このように複数の画像が収納されているクラスをImageCollectionといいます。
-先程のDocsを思い出すと，reproject関数はImageクラスでした。
+先程のDocsを思い出すと，reproject関数はImageクラスのメソッドでした。
 そこでImageCollectionをImageに変換すれば良いと推測されます。
 
 今回はImageCollectionの最初の一枚を使用することにします。
@@ -517,13 +629,13 @@ featuresをクリックすると，modis\_imgは4つの画像が収納されて�
 var modis_img = modisImageCollection
   .filterBounds(point)
   .filterDate(start, finish)
-  .first(); // first()を追加し，最初の一枚を選択。
+  .first(); // 最初の画像を選択
 
 var modis_reprojected_img = ee.Image(modis_img).reproject('EPSG:4326', null, 500);
 ```
 
 ee.Image(modis\_img)はmodis\_imgをee.Imageクラスにキャストしています。
-これはee.ImageCollectionが様々なデータ型を収納しているためだそうです（ソース：https://developers.google.com/earth-engine/tutorial\_api\_04）。
+これは[ee.ImageCollectionが様々なデータ型を収納しているため](https://developers.google.com/earth-engine/tutorial_api_04)だそうです。
 
 リプロジェクション後のスクリプトは以下のようになります。
 
@@ -545,7 +657,7 @@ var landsat8_img = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
 var modis_img = modisImageCollection
   .filterBounds(point)
   .filterDate(start, finish)
-  .first(); // first()を追加し，最初の一枚を選択。
+  .first(); // 最初の画像を選択
 
 var modis_reprojected_img = ee.Image(modis_img).reproject('EPSG:4326', null, 500);
 
@@ -555,10 +667,13 @@ var landsat8VizParams = {bands: ['B4', 'B3', 'B2'], min:0, max:3000};
 var modisVizParams = {bands: ['sur_refl_b01', 'sur_refl_b04', 'sur_refl_b03'], min:0, max:3000};
 Map.addLayer(sentinel2_img, sentinel2VizParams, "sentinel2");
 Map.addLayer(landsat8_img, landsat8VizParams, "landsat8");
-Map.addLayer(modis_reprojected_img, modisVizParams, "modis");
+Map.addLayer(modis_reprojected_img, modisVizParams, "modis"); // not modis_img !
 ```
-
 リプロジェクション前は斜めであった画像がきれいにまっすぐになったかと思います。
+
+<a :href="$withBase('/chap03/modis_5.png')" target="_blank">
+  <img :src="$withBase('/chap03/modis_5.png')" alt="">
+</a>
 
 トゥルカラー・ナチュラルカラー・フォールスカラー
 ------------------------------------------------
@@ -592,7 +707,7 @@ Map.addLayer(landsat8_img, {bands: ['B4', 'B5', 'B3'], min :0, max:3000 });
 フォールスカラーの配色には様々な対応関係がありますが（TIP），植物の分布を解析する場合には赤色に近赤外のバンドを，緑色に赤色のバンドを，青色に緑色のバンドを対応させます。
 
 ::: tip
-例えばNASAのホームページには赤色に短波長赤外を，緑色に近赤外を，青色に緑色を割り当てる組み合わせを紹介しており，他にもいくつか組み合わせを紹介しています。https://earthobservatory.nasa.gov/Features/FalseColor/page6.php
+例えばNASAのホームページには赤色に短波長赤外を，緑色に近赤外を，青色に緑色を割り当てる組み合わせを紹介しており，[他にもいくつか組み合わせを紹介しています](https://earthobservatory.nasa.gov/Features/FalseColor/page6.php)。
 :::
 
 <!--
@@ -629,6 +744,9 @@ Map.addLayer(landsat8_img, naturalColorVizParams, "Natural color");
 Map.addLayer(landsat8_img, falseColorVizParams, "False color");
 ```
 
+<a :href="$withBase('/chap03/true_natural_false.png')" target="_blank">
+  <img :src="$withBase('/chap03/true_natural_false.png')" alt="">
+</a>
 植物が生えている箇所を探し，それぞれのカラー表示の見え方を確認してみましょう。
 
 まとめ

@@ -13,11 +13,18 @@ Mapなどの地図アプリで表示される画像で見たことがあるか�
 Engineのページに、[タイムラプス](https://earthengine.google.com/timelapse/)というページがあります。
 
 このページは1年毎に撮影された衛星画像をタイムラプスで表示させています。
-URLを入力すると、アメリカのマイアミ付近が表示されます。
+このページに飛ぶと、アメリカのMiami付近が表示されます。
+<a :href="$withBase('/chap02/timelapse_miami.png')" target="_blank">
+  <img :src="$withBase('/chap02/timelapse_miami.png')" alt="">
+</a>
+
 西側に着目すると、森のようなものが伐採され、その代わりにプールのようなものが建築されている様子が見て取れます。
-このページでは、マイアミ以外にもいくつかの場所が予め用意されています。
+このページでは、Miami以外にもいくつかの場所が予め用意されています。
 
 ためしにShirase Glacierを表示させてみましょう。
+<a :href="$withBase('/chap02/timelapse_shirase_glacier.png')" target="_blank">
+  <img :src="$withBase('/chap02/timelapse_shirase_glacier.png')" alt="">
+</a>
 この地域では、2000年ごろから氷河が徐々に動いている様子を観察出来ます。
 バーを右に動かし、Aral Sea（アラル海）というものを見てみましょう。
 アラル海の縮小は、高校で地理を勉強した人は聞き覚えが有るかもしれません。
@@ -47,8 +54,12 @@ EDITORというページ上で行っていきますので、このページを�
 
 ### 画面の説明
 
-実際に解析を始める前に、ざっくりと画面を説明します。 CODE
-EDITORは、プログラムを書いたりする上画面と、その結果を表示する下画面に分かれています。
+実際に解析を始める前に、ざっくりと画面を説明します。 
+<a :href="$withBase('/chap02/code_editor.png')" target="_blank">
+  <img :src="$withBase('/chap02/code_editor.png')" alt="">
+</a>
+
+CODE EDITORは、プログラムを書いたりする上画面と、その結果を表示する下画面に分かれています。
 
 使い方としては左上の画面でスクリプトを作成/選択し、Code
 Editorで編集し実行、その後Mapに表示された結果を見て、Code

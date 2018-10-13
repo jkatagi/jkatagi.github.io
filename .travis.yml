@@ -3,6 +3,7 @@ node_js:
 - '10'
 install:
 - npm i -g vuepress
+- npm i -g markdown-it-katex
 script:
 - npm run docs:build
 cache:

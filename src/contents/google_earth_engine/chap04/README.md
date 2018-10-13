@@ -80,6 +80,10 @@ interesetの略で、ee.Geometry.Rectangle()で四角形で指定しています
 そのためee.Image()で囲むことによって型をee.Image型に変換させています。
 このスクリプトを走らせるとroiの範囲で切りだされた画像が表示されるかと思います。
 
+<a :href="$withBase('/chap04/ndvi1.png')" target="_blank">
+  <img :src="$withBase('/chap04/ndvi1.png')" alt="">
+</a>
+
 ここから実際にNDVIの計算をしてみましょう。
 まずはじめにMOD09A1における赤・近赤外の波長に対応するバンドを調べます。
 SearchにMOD09A1と入力し、確認するとsur\_refl\_b01が赤色（red）でsur\_refl\_b02が近赤外（Near
@@ -145,6 +149,9 @@ var visParams = {
 };
 Map.addLayer(ndvi.clip(roi), visParams);
 ```
+<a :href="$withBase('/chap04/ndvi2.png')" target="_blank">
+  <img :src="$withBase('/chap04/ndvi2.png')" alt="">
+</a>
 
 日本に着目してみると、全体的に青みがかかっていると思います。
 この部分は雲に覆われてしまっていることによるものです。
@@ -182,9 +189,8 @@ var visParams = {
   min:0.0, max:1.0, 
   palette: ['0000FF', 'FFFF00', 'FF0000']
 };
-Map.addLayer(image.clip(roi), visParams);
+Map.addLayer(ndvi.clip(roi), visParams);
 ```
-
 ### NDVIの計算（複数枚の場合）
 
 NDVIの計算の実装方法が分かったので、今度は複数枚に対してNDVIを計算します。
@@ -429,13 +435,15 @@ var visParams = {
 Map.setCenter(120, 35, 4);
 Map.addLayer(ndvi_max_land.clip(roi), visParams);
 ```
+<a :href="$withBase('/chap04/ndvi3.png')" target="_blank">
+  <img :src="$withBase('/chap04/ndvi3.png')" alt="">
+</a>
 
 ### UIツールを用いたNDVIトレンドの確認
 
 論文ではこの後2000年から2005年までの各年に対してNDVIの年間最大値を求め、回帰直線を引いてその傾きを地図上にプロットしていました。
 これは練習問題に回すとして、GEEのUIツールというものを用いてNDVIトレンドを確認してみましょう
-（以下のコードのMap.onClick()はGEE 2018 Tokyo
-minisumitのコードをベースに一部変更を加えたものです）。
+（以下のコードのMap.onClick()は[GoogeEarthEngine 2018 Tokyo minisumit](https://events.withgoogle.com/earthengineminisummit2018tyo/#content)の[コード](https://code.earthengine.google.com/?accept_repo=users/nclinton/ui-api-101)をベースに一部変更を加えたものです）。
 
 <!--
 ``` {caption="NDVIの計算" 17=""}
@@ -523,7 +531,11 @@ Map.style().set('cursor', 'crosshair');
 ```
 
 どこか適当な場所をクリックすると、マップの横に時系列NDVIのチャートが表示されるかと思います。
-論文で取り上げられているN36°16′34″E110°45′16″(＝N36.276E110.754)をクリックし、実際にNDVIが増加しているかを調べてみましょう。
+論文で取り上げられているN36°16′34″E110°45′16″(＝N36.276E110.754)の付近クリックし、実際にNDVIが増加しているかを調べてみましょう。
+
+<a :href="$withBase('/chap04/ndvi4.png')" target="_blank">
+  <img :src="$withBase('/chap04/ndvi4.png')" alt="">
+</a>
 
 まとめ
 ------
