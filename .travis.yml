@@ -1,9 +1,9 @@
 language: node_js
 node_js:
 - '10'
-install:
-- npm i -g vuepress
-- npm i -g markdown-it-katex
+before_install:
+- npm ci vuepress
+- npm ci markdown-it-katex
 script:
 - npm run docs:build
 cache:
