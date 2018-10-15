@@ -18,6 +18,7 @@ module.exports = {
                 {
                     title: 'GoogleEarthEngine入門-ゼロから始める衛星画像解析-',
                     collapsable: false,
+                    ga: 'UA-127509180-1',
                     children: [
                         ['/contents/google_earth_engine/chap01/', '第1章：はじめに'],
                         ['/contents/google_earth_engine/chap02/', '第2章：衛星画像を見てみよう'],
