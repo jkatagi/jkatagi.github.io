@@ -10,13 +10,13 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'ゼロから始める衛星画像解析', link: '/contents/google_earth_engine/' },
+            { text: 'GoogleEarthEngine入門-ゼロから始める衛星画像解析-', link: '/contents/google_earth_engine/' },
             { text: 'Github', link: 'https://github.com/jkatagi' }
         ],
         sidebar: {
             '/contents/google_earth_engine/': [
                 {
-                    title: 'ゼロから始める衛星画像解析',
+                    title: 'GoogleEarthEngine入門-ゼロから始める衛星画像解析-',
                     collapsable: false,
                     children: [
                         ['/contents/google_earth_engine/chap01/', '第1章：はじめに'],

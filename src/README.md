@@ -2,7 +2,7 @@
 home: true
 heroImage: ./bird.jpg
 heroText: jkatagi's pages
-actionText: See "ゼロから始める衛星画像解析"
+actionText: GoogleEarthEngine入門-ゼロから始める衛星画像解析-
 actionLink: /contents/google_earth_engine/
 description: Welcome to my homepage!
 footer: Copyright © 2018-Jin Katagi.
