@@ -12,6 +12,7 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'GoogleEarthEngine入門-ゼロから始める衛星画像解析-', link: '/contents/google_earth_engine/' },
+            { text: '論文メモ', link: '/contents/paper_review/' },
             { text: 'Github', link: 'https://github.com/jkatagi' }
         ],
         sidebar: {
