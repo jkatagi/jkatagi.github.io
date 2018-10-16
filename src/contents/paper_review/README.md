@@ -8,9 +8,6 @@ sidebar: auto
 
 # テンプレ
 [落合メソッド](https://www.slideshare.net/Ochyai/1-ftma15)に従い以下のテンプレに沿ってレビューしていきます。
-- 出版: 
-- 読んだ日：
-- ★★★★☆
 1. どんなもの？
 
 2. 先行研究と比べてどこがすごい？
@@ -26,9 +23,9 @@ sidebar: auto
 # レビュー
 
 ## [Crowdsourcing In-Situ Data on Land Cover and Land Use Using Gamification and Mobile Technology](http://www.mdpi.com/2072-4292/8/11/905)
-- 出版
+- 出版: 
 - 読んだ日：
-- ★★☆☆☆
+- ★★★★☆
 
 1. どんなもの？
 
@@ -47,8 +44,12 @@ sidebar: auto
   - ヨーロッパが3年に一度行っている現地調査。ポイントが1500mを超える場合？や衛星画像から判読不能な場合に現地調査。
 
 ## [Collect Earth: Land User and Land Cover Assessment through Augmented Visual Interpretation](https://www.mdpi.com/2072-4292/8/10/807)
+- 出版:Remote sens. 2016, 8, 807.
+- 読んだ日：2018/10/16
+- ★★★★★
 
 1. どんなもの？
+- 複数のデータを参照しながら参照データを取得するCollect Earth。
 
 2. 先行研究と比べてどこがすごい？
 - 複数の高解像度衛星を用いている。
@@ -57,10 +58,14 @@ sidebar: auto
 - 確率的サンプリングツール
 
 3. 技術や手法のキモはどこ？
+- 複数のツールを組み合わせ、複数の情報を参照出来る点。
 
 4. どうやって有効だと検証した？
+- 実際のプロジェクトで使った。
 
 5. 議論はある？ 
+- 実際に使ってみたが、カテゴリで登録というよりは被覆率で登録するようで、ちょっと使いづらかった。
+- ただGEEとの連携は見事。
 
 6. 次に読むべき論文は？
 
