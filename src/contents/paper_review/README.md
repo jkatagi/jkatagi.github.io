@@ -25,6 +25,33 @@ sidebar: auto
 
 # レビュー
 
+## [Virtual Interpretation of Earth Web-Interface Tool (VIEW-IT) for Collecting Land-Use/Land-Cover Reference Data](https://www.mdpi.com/2072-4292/3/3/601/htmp)
+- 出版: Remote Sens. 2011, 3(3), 601-620
+- 読んだ日： 2018/10/17
+- ★★★☆☆
+
+1. どんなもの？
+- Google Earth APIを用いて参照データを取得するプラットフォームを構築
+
+2. 先行研究と比べてどこがすごい？
+- 2011年の論文なので、これが初？
+
+3. 技術や手法のキモはどこ？
+- Google Earth APIを使用。
+- ArcGIS Serverを用いて時系列EVIを表示
+- Google Chartsで統計情報を表示
+- サンプル同士は1000m以上離れてるようにする。
+- 二人のユーザーの判読が異なった場合、エキスパートが判読する。
+
+4. どうやって有効だと検証した？
+-　Latin AmericaとCaribbeanの参照データセットをVIEW-ITを用いて取得。
+- 18ヶ月かけ、約46,000点判読。
+
+5. 議論はある？ 
+- Google Eath APIが廃止されたからか、VIEW-ITのサイト自体を見つけられなかった。
+
+6. 次に読むべき論文は？
+
 ## [Crowdsourcing In-Situ Data on Land Cover and Land Use Using Gamification and Mobile Technology](http://www.mdpi.com/2072-4292/8/11/905)
 - 出版: 
 - 読んだ日：
