@@ -8,6 +8,9 @@ sidebar: auto
 
 # テンプレ
 [落合メソッド](https://www.slideshare.net/Ochyai/1-ftma15)に従い以下のテンプレに沿ってレビューしていきます。
+- 出版: 
+- 読んだ日：
+- ★★★★☆
 1. どんなもの？
 
 2. 先行研究と比べてどこがすごい？
@@ -42,6 +45,35 @@ sidebar: auto
   -  Geo-Wikiのように高解像度衛星画像を参照して検証情報を集めるプロジェクト？
 - [LUCAS 2015](http://ec.europa.eu/eurostat/documents/205002/6786255/LUCAS2015-C1-Instructions-20150227.pdf)
   - ヨーロッパが3年に一度行っている現地調査。ポイントが1500mを超える場合？や衛星画像から判読不能な場合に現地調査。
+
+## [Characterizing the Spatial and Temporal Availability of Very High Resolution Satellite Imagery in Google Earth and Microsoft Bing Maps as a Source of Reference Data](https://www.mdpi.com/2073-445X/7/4/118)
+- 出版: Land 2018, 7(4), 118
+- 読んだ日：2018/10/18
+- ★★★★☆
+
+1. どんなもの？
+- 高分解能衛星画像が参照出来る地域を調べた。
+- Google EarthとMicrosoft Bing Mapをそれぞれ比較した。
+
+2. 先行研究と比べてどこがすごい？
+- 網羅的に調べた論文は初？
+
+3. 技術や手法のキモはどこ？
+- APIを叩いてVHRのメタデータを解析した。
+  - 2017年1月以降、GoogleEarthのAPI変更によりメタデータは取り出せなくなった模様。
+- 地域ごと、用途ごとにまとめている。
+
+4. どうやって有効だと検証した？
+- メタデータ解析なので有効性の確認はない。
+
+5. 議論はある？ 
+- Globalで考える場合以外にも、地域で土地被覆図を作成する場合にもこの論文で扱っている題材は重要そう。
+
+6. 次に読むべき論文は？
+- [A global reference database of crowdsourced cropland data collected using the Geo-Wiki platform](https://www.nature.com/articles/sdata2017136)
+  - Geo-Wiki論文。
+- [Validation of GIS layers in the EU: getting adapted to available reference data](https://www.tandfonline.com/doi/abs/10.1080/17538947.2010.512746<Paste>)
+  - EUのLUCASキャンペーンの論文？読みたいがオープンアクセスじゃない。
 
 ## [Collect Earth: Land User and Land Cover Assessment through Augmented Visual Interpretation](https://www.mdpi.com/2072-4292/8/10/807)
 - 出版:Remote sens. 2016, 8, 807.
