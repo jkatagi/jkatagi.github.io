@@ -25,6 +25,30 @@ sidebar: auto
 
 # レビュー
 
+## [A global reference database of crowdsourced cropland data collected using the Geo-Wiki platform](https://www.nature.com/articles/sdata2017136)
+- 出版:Scientific Data volume 4, Article number: 170136 (2017) 
+- 読んだ日：2018/10/19
+- ★★★☆☆
+1. どんなもの？
+- Geo-wikiを使ってCropland参照データを集めた。
+
+2. 先行研究と比べてどこがすごい？
+- 既存のデータセット（例えばGOFC-GOLC）はCroplandのためだけの参照データセットではないので、サンプルサイズが不足。
+- GEOGLAM/JECAMというCroplandの定義を使用。
+
+3. 技術や手法のキモはどこ？
+- 層別サンプリングにおいて、判読が難しいCroplandが25%-75%のピクセルを多めに判読。
+
+4. どうやって有効だと検証した？
+- 取得したサンプルとは別に2000点取得し（そのうち207点は除外）、衛星画像判読のトレーニングを受けた3人の学生に判読させた。
+- 更に別の点をIIASAの専門家が判読。
+- 参加者は20地点ごとに検証点を判読する。
+
+5. 議論はある？ 
+
+6. 次に読むべき論文は？
+- [Assessing global land cover reference datasets for different user communities](https://www.sciencedirect.com/science/article/pii/S0924271614000458)
+
 ## [Virtual Interpretation of Earth Web-Interface Tool (VIEW-IT) for Collecting Land-Use/Land-Cover Reference Data](https://www.mdpi.com/2072-4292/3/3/601/htmp)
 - 出版: Remote Sens. 2011, 3(3), 601-620
 - 読んだ日： 2018/10/17
