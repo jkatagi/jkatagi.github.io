@@ -54,9 +54,9 @@ To acheive that, we are developing rephotography application for Android.
 1. Takane, Y., H. Kondo, H. Kusaka, __J. Katagi__, O. Nagafuchi, K. Nakazawa, N. Kaneyasu, and Y. Miyakami. (2017): Foehn-like wind with a traditional foehn effect plus dry diabatic heating from the ground surface contribute to high temperatures at the end of a leeward area. _Journal of Applied Meteorology and Climatology_, DOI: http://dx.doi.org/10.1175/JAMC-D-16-0257.1.
 
 ## Presentatoin (plan).
-1. __片木仁__, 奈佐原顕郎, 道津正徳, 今村功一, 山之口勤, 田殿武雄. (2018):  土地被覆研究のための多地点・多時期参照データセット"SACLAJ"の開発, 日本リモートセンシング学会第65会（平成30年度秋季）学術講演会, サンポートホール高松, 高松市, 2018年11月20日. （ポスター）
 
 ## Presentatoin.
+1. __片木仁__, 奈佐原顕郎, 道津正徳, 今村功一, 山之口勤, 田殿武雄. (2018):  土地被覆研究のための多地点・多時期参照データセット"SACLAJ"の開発, 日本リモートセンシング学会第65会（平成30年度秋季）学術講演会, サンポートホール高松, 高松市, 2018年11月28日. （ポスター）
 1. 小田川信哉, 奥村俊夫, 道下亮, __片木仁.__(2018) :Google Earth EngineとFusion Tablesを用いた水稲研究支援システムの試行, 日本リモートセンシング学会第64回（平成30年度春季）学術講演会, 東京大学柏キャンパス, 2018年5月18日.
 1. Y.Takane, H.Kondo, H.Kusaka, __J.Katagi__, O.Nagafuchi, K.Nakazawa, N.Kaneyas and Y.Miyakami (2018): Foehnlike wind with a traditional foehn effect plus dry diabatic heating form the ground surface contribute to high temperatures at the end of a leeward area, International Workshop on Wind-Related Disasters and Mitigation, Tohoku University, Sendai, Mar.11-14.
 1. __片木仁__, 奈佐原顕郎, 道津正徳, 今村功一, 山之口勤, 田殿武雄. (2017): 多時期土地被覆情報データセット"SACLAJ"のための再撮影アプリ開発, 日本リモートセンシング学会第63回（平成29年度秋季）学術講演会, 酪農学園大学, 江別市, 2017年11月21日.
