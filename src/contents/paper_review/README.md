@@ -26,6 +26,30 @@ sidebar: auto
 
 # レビュー
 
+## [Citizens as sensors: the world of volunteered geography](https://link.springer.com/article/10.1007/s10708-007-9111-y)
+- 出版: GeoJournal, 2007, 69.4: 211-221
+- Author: Michael F. GoodchildEmail author
+- 読んだ日：2018/12/06
+- ★★☆☆☆
+1. どんなもの？
+- 市民科学の広がりをWeb2.0やGPS、OSMなどに触れながら述べていく解説論文。
+- 引用数が3000を超えていたので読んだ。
+
+2. 先行研究と比べてどこがすごい？
+- 解説論文？
+
+3. 技術や手法のキモはどこ？
+- 解説論文？
+
+4. どうやって有効だと検証した？
+- 解説論文？
+
+5. 議論はある？
+- 市民科学の広がりに言及するときに引用するのか？
+
+6. 次に読むべき論文は？
+- 特になし
+
 ## [The Role of Citizen Science in Earth Observation](https://www.mdpi.com/2072-4292/9/4/357)
 - 出版: Remote Sens. 2017, 9(4), 357
 - Author: Steffen Fritz, Cidália Costa Fonte, and Linda See
