@@ -9,6 +9,7 @@ sidebar: auto
 # テンプレ
 [落合メソッド](https://www.slideshare.net/Ochyai/1-ftma15)に従い以下のテンプレに沿ってレビューしていきます。
 - 出版: 
+- Author:
 - 読んだ日：
 - ★★★★☆
 1. どんなもの？
@@ -19,11 +20,36 @@ sidebar: auto
 
 4. どうやって有効だと検証した？
 
-5. 議論はある？ 
+5. 議論はある？
 
 6. 次に読むべき論文は？
 
 # レビュー
+
+## [The Role of Citizen Science in Earth Observation](https://www.mdpi.com/2072-4292/9/4/357)
+- 出版: Remote Sens. 2017, 9(4), 357
+- Author: Steffen Fritz, Cidália Costa Fonte, and Linda See
+- 読んだ日：2018/12/06
+- ★★☆☆☆
+
+1. どんなもの？
+- 市民科学と地球観測のレビュー。
+
+2. 先行研究と比べてどこがすごい？
+- レビュー論文。
+
+3. 技術や手法のキモはどこ？
+- レビュー論文。
+
+4. どうやって有効だと検証した？
+- レビュー論文。
+
+5. 議論はある？
+- 2.2.4 Land Coverと3. The Future Outlook for Citizen Science and Earth Observationのみを読んだ。
+- Land Coverで見落としている論文が無いかと期待したが、特になかった。
+
+6. 次に読むべき論文は？
+- 特になし。
 
 ## [A global reference database of crowdsourced cropland data collected using the Geo-Wiki platform](https://www.nature.com/articles/sdata2017136)
 - 出版:Scientific Data volume 4, Article number: 170136 (2017) 
