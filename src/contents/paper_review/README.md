@@ -26,6 +26,38 @@ sidebar: auto
 
 # レビュー
 
+## [Accurate Attribute Mapping from Volunteered Geographic Information: Issues of Volunteer Quantity and Quality](https://www.tandfonline.com/doi/pdf/10.1080/00087041.2015.1108658)
+- 出版:  The Cartographic Journal The World of Mapping Volume 52, 2015 - Issue 4 
+- Author: G. M. Foody, L. See, S. Fritz, M. van der Velde, C. Perger, C. Schill, D. S. Boyd & A. Comber
+- 読んだ日：2018/12/07
+- ★☆☆☆☆
+
+1. どんなもの？
+- Volunteered geographic information (VGI)の精度評価。
+
+2. 先行研究と比べてどこがすごい？
+- (Raykar and Yu, 2012) などはボランティアが少ない量のデータしか提供しない時に精度が低い。
+- (Goodchild and LI, 2012)のように、信用された人をgatekeepresとして置くような手法も、その人のqualityや利用可能な文脈情報などの制限がある。
+- (Foody et al. 2013)との違いは...？
+
+3. 技術や手法のキモはどこ？
+
+4. どうやって有効だと検証した？
+- Geo-wikiのデータ (299枚の衛星画像を10の土地被覆カテゴリに分類)を用いた。
+  - 299枚は99-100-100枚に分かれている（ボランティアは知らない）。
+  - 最後の100枚だけ高解像度衛星画像。
+  - 99-100枚を用いて判読の経験を積んでいるかどうかを調査。
+  - 100-100枚を用いて解像度による判読の違いを調査。
+  - cultivated and managed landsのみに焦点を当てた（199枚はこのクラス）。
+
+5. 議論はある？
+- 肝心の予測モデルの定義がしっかりとされていなく（P339）、それ以降読むのをやめた。
+- そのため先行研究（以下の論文）との違いも分からず。
+
+6. 次に読むべき論文は？
+-  Foody, Giles M., et al. "Assessing the accuracy of volunteered geographic information arising from multiple contributors to an internet based collaborative project." Transactions in GIS 17.6 (2013): 847-860. 
+  - https://onlinelibrary.wiley.com/doi/full/10.1111/tgis.12033
+
 ## [Land cover 2.0](https://www.tandfonline.com/doi/abs/10.1080/01431161.2018.1452075)
 - 出版:  International Journal of Remote Sensing Volume 39, 2018 - Issue 12
 - Author: Michael A. Wulder, Nicholas C. Coops, David P. Roy, Joanne C. White & Txomin Hermosilla
