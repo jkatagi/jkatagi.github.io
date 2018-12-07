@@ -26,6 +26,35 @@ sidebar: auto
 
 # レビュー
 
+## [Land cover 2.0](https://www.tandfonline.com/doi/abs/10.1080/01431161.2018.1452075)
+- 出版:  International Journal of Remote Sensing Volume 39, 2018 - Issue 12
+- Author: Michael A. Wulder, Nicholas C. Coops, David P. Roy, Joanne C. White & Txomin Hermosilla
+- 読んだ日：2018/12/07
+- ★★★☆☆
+
+1. どんなもの？
+- Towanshend's (1992)から25年経ち、現状を振り返るレビューペーパー。
+- Land Cover 2.0: オープンアクセス・解析準備済みのオープンデータの自動処理を用いて、タイムリーで精度の高い土地被覆図
+
+2. 先行研究と比べてどこがすごい？
+- レビューペーパーなのでなし。
+
+3. 技術や手法のキモはどこ？
+- レビューペーパーなのでなし。
+
+4. どうやって有効だと検証した？
+- レビューペーパーなのでなし。
+
+5. 議論はある？
+- アルゴリズム・検証・作成した地図の配信など幅広くレビューしている。
+- 3.2.2 Land cover legend, 3.2.3 Calibration and validation data, 3.2.8 Accuracy assessmentを読んだ。
+
+6. 次に読むべき論文は？
+- Foody, G. M., L. See, S. Fritz, M. Van der Velde, C. Perger, C. Schill, D. S. Boyd, and A. Comber. 2015. “Accurate Attribute Mapping from Volunteered Geographic Information: Issues of Volunteer Quantity and Quality.” 
+  - https://www.tandfonline.com/doi/pdf/10.1080/00087041.2015.1108658
+- Tracewski, L., L. Bastin, and C. C. Fonte. 2017. “Repurposing a Deep Learning Network to Filter and Classify Volunteered Photographs for Land Cover and Land Use Characterization.”
+  - https://www.tandfonline.com/doi/pdf/10.1080/10095020.2017.1373955
+
 ## [Citizens as sensors: the world of volunteered geography](https://link.springer.com/article/10.1007/s10708-007-9111-y)
 - 出版: GeoJournal, 2007, 69.4: 211-221
 - Author: Michael F. GoodchildEmail author
