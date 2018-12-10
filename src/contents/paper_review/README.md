@@ -114,7 +114,7 @@ sidebar: auto
 
 ## [Citizens as sensors: the world of volunteered geography](https://link.springer.com/article/10.1007/s10708-007-9111-y)
 - 出版: GeoJournal, 2007, 69.4: 211-221
-- Author: Michael F. GoodchildEmail author
+- Author: Michael F. Goodchild
 - 読んだ日：2018/12/06
 - ★★☆☆☆
 1. どんなもの？
