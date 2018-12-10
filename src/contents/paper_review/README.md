@@ -26,6 +26,31 @@ sidebar: auto
 
 # レビュー
 
+## [Chapter 7 Assessing VGI Data Quality]
+- 出版: Mapping and the Citizen Sensor. Pp.137-163. London: Ubiquity Presss.
+- Author: Fonte, C C, Antoniou, V, Bastin, L, Estima, J, Arsanjani, J J, Bayas, J-C L, See, L adn Vatseva, R.
+- 読んだ日：2018/12/10
+- ★★★★☆
+1. どんなもの？
+- ボランティアによる地理情報（VGI）の精度評価について、ISO 19157 (2013)を元に考察。
+
+2. 先行研究と比べてどこがすごい？
+- レビュー論文。
+
+3. 技術や手法のキモはどこ？
+- レビュー論文。
+
+4. どうやって有効だと検証した？
+- レビュー論文。
+
+5. 議論はある？
+- 自分が欲しかった情報は無かった。
+
+6. 次に読むべき論文は？
+- Chapter 10がVGIのプロトコルについて説明しているようなので読みたい。
+
+# レビュー
+
 ## [Accurate Attribute Mapping from Volunteered Geographic Information: Issues of Volunteer Quantity and Quality](https://www.tandfonline.com/doi/pdf/10.1080/00087041.2015.1108658)
 - 出版:  The Cartographic Journal The World of Mapping Volume 52, 2015 - Issue 4 
 - Author: G. M. Foody, L. See, S. Fritz, M. van der Velde, C. Perger, C. Schill, D. S. Boyd & A. Comber
