@@ -70,4 +70,4 @@ To acheive that, we are developing rephotography application for Android.
 1. 髙根雄也, 近藤裕昭, 日下博幸, __片木仁__, 永淵修, 中澤暦, 兼保直樹, 宮上佳弘 (2016): 岐阜県多治見市に高温をもたらす地表面加熱を伴うフェーン, 2016年日本地理学会秋季学術大会, 東北大学, 2016年10月1日.
 
 ## Thesis.
-* Bachelor thesis：機械学習を用いた日本域土地利用・土地被覆図の高精度化
+* Bachelor thesis：機械学習を用いた日本域土地利用・土地被覆図の高精度化 [pdf](https://github.com/jkatagi/jkatagi.github.io/tree/dev-vuepress/pdf/2016FY_Katagi_bachelor.pdf)
