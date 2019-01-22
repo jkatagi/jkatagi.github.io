@@ -64,6 +64,8 @@ To acheive that, we are developing rephotography application for Android.
 # Research perfomance.
 
 ## Original paper.
+1. Tsutsumida N., Nagai S., Rodríguez-Veiga P., __Katagi J__, Nasahara K. , Tadono T.. Mapping spatial accuracy of the forest type classification in JAXA’s high-resolution land use and land cover map, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, accepted.
+
 1. __片木仁__・奈佐原顕郎・小林健一郎・道津正徳・田殿武雄 (2018) : 多時期光学観測画像を用いた高解像度土地利用・土地被覆図における,山影処理による誤分, 日本リモートセンシング学会誌, pp30-34. Vol. 38, No. 1.
 類の低減. 日本リモートセンシング学会誌,
 1. Hoang T.T., Nasahara K.N., __Katagi J__. (2018) : Analysis of Land Cover Changes in Northern Vietnam Using High Resolution Remote Sensing Data. In: Tien Bui D., Ngoc Do A., Bui HB., Hoang ND. (eds) Advances and Applications in Geospatial Technology and Earth Resources. GTER 2017. Springer, Cham. [Link](https://link.springer.com/chapter/10.1007/978-3-319-68240-2_9)
@@ -84,4 +86,4 @@ To acheive that, we are developing rephotography application for Android.
 1. 髙根雄也, 近藤裕昭, 日下博幸, __片木仁__, 永淵修, 中澤暦, 兼保直樹, 宮上佳弘 (2016): 岐阜県多治見市に高温をもたらす地表面加熱を伴うフェーン, 2016年日本地理学会秋季学術大会, 東北大学, 2016年10月1日.
 
 ## Thesis.
-* Bachelor thesis：機械学習を用いた日本域土地利用・土地被覆図の高精度化
+* Bachelor thesis：機械学習を用いた日本域土地利用・土地被覆図の高精度化 [pdf](https://github.com/jkatagi/jkatagi.github.io/tree/dev-vuepress/pdf/2016FY_Katagi_bachelor.pdf)

@@ -9,6 +9,7 @@ sidebar: auto
 # テンプレ
 [落合メソッド](https://www.slideshare.net/Ochyai/1-ftma15)に従い以下のテンプレに沿ってレビューしていきます。
 - 出版: 
+- Author:
 - 読んだ日：
 - ★★★★☆
 1. どんなもの？
@@ -19,11 +20,146 @@ sidebar: auto
 
 4. どうやって有効だと検証した？
 
-5. 議論はある？ 
+5. 議論はある？
 
 6. 次に読むべき論文は？
 
 # レビュー
+
+## [Chapter 7 Assessing VGI Data Quality]
+- 出版: Mapping and the Citizen Sensor. Pp.137-163. London: Ubiquity Presss.
+- Author: Fonte, C C, Antoniou, V, Bastin, L, Estima, J, Arsanjani, J J, Bayas, J-C L, See, L adn Vatseva, R.
+- 読んだ日：2018/12/10
+- ★★★★☆
+1. どんなもの？
+- ボランティアによる地理情報（VGI）の精度評価について、ISO 19157 (2013)を元に考察。
+
+2. 先行研究と比べてどこがすごい？
+- レビュー論文。
+
+3. 技術や手法のキモはどこ？
+- レビュー論文。
+
+4. どうやって有効だと検証した？
+- レビュー論文。
+
+5. 議論はある？
+- 自分が欲しかった情報は無かった。
+
+6. 次に読むべき論文は？
+- Chapter 10がVGIのプロトコルについて説明しているようなので読みたい。
+
+# レビュー
+
+## [Accurate Attribute Mapping from Volunteered Geographic Information: Issues of Volunteer Quantity and Quality](https://www.tandfonline.com/doi/pdf/10.1080/00087041.2015.1108658)
+- 出版:  The Cartographic Journal The World of Mapping Volume 52, 2015 - Issue 4 
+- Author: G. M. Foody, L. See, S. Fritz, M. van der Velde, C. Perger, C. Schill, D. S. Boyd & A. Comber
+- 読んだ日：2018/12/07
+- ★☆☆☆☆
+
+1. どんなもの？
+- Volunteered geographic information (VGI)の精度評価。
+
+2. 先行研究と比べてどこがすごい？
+- (Raykar and Yu, 2012) などはボランティアが少ない量のデータしか提供しない時に精度が低い。
+- (Goodchild and LI, 2012)のように、信用された人をgatekeepresとして置くような手法も、その人のqualityや利用可能な文脈情報などの制限がある。
+- (Foody et al. 2013)との違いは...？
+
+3. 技術や手法のキモはどこ？
+
+4. どうやって有効だと検証した？
+- Geo-wikiのデータ (299枚の衛星画像を10の土地被覆カテゴリに分類)を用いた。
+  - 299枚は99-100-100枚に分かれている（ボランティアは知らない）。
+  - 最後の100枚だけ高解像度衛星画像。
+  - 99-100枚を用いて判読の経験を積んでいるかどうかを調査。
+  - 100-100枚を用いて解像度による判読の違いを調査。
+  - cultivated and managed landsのみに焦点を当てた（199枚はこのクラス）。
+
+5. 議論はある？
+- 肝心の予測モデルの定義がしっかりとされていなく（P339）、それ以降読むのをやめた。
+- そのため先行研究（以下の論文）との違いも分からず。
+
+6. 次に読むべき論文は？
+-  Foody, Giles M., et al. "Assessing the accuracy of volunteered geographic information arising from multiple contributors to an internet based collaborative project." Transactions in GIS 17.6 (2013): 847-860. 
+  - https://onlinelibrary.wiley.com/doi/full/10.1111/tgis.12033
+
+## [Land cover 2.0](https://www.tandfonline.com/doi/abs/10.1080/01431161.2018.1452075)
+- 出版:  International Journal of Remote Sensing Volume 39, 2018 - Issue 12
+- Author: Michael A. Wulder, Nicholas C. Coops, David P. Roy, Joanne C. White & Txomin Hermosilla
+- 読んだ日：2018/12/07
+- ★★★☆☆
+
+1. どんなもの？
+- Towanshend's (1992)から25年経ち、現状を振り返るレビューペーパー。
+- Land Cover 2.0: オープンアクセス・解析準備済みのオープンデータの自動処理を用いて、タイムリーで精度の高い土地被覆図
+
+2. 先行研究と比べてどこがすごい？
+- レビューペーパーなのでなし。
+
+3. 技術や手法のキモはどこ？
+- レビューペーパーなのでなし。
+
+4. どうやって有効だと検証した？
+- レビューペーパーなのでなし。
+
+5. 議論はある？
+- アルゴリズム・検証・作成した地図の配信など幅広くレビューしている。
+- 3.2.2 Land cover legend, 3.2.3 Calibration and validation data, 3.2.8 Accuracy assessmentを読んだ。
+
+6. 次に読むべき論文は？
+- Foody, G. M., L. See, S. Fritz, M. Van der Velde, C. Perger, C. Schill, D. S. Boyd, and A. Comber. 2015. “Accurate Attribute Mapping from Volunteered Geographic Information: Issues of Volunteer Quantity and Quality.” 
+  - https://www.tandfonline.com/doi/pdf/10.1080/00087041.2015.1108658
+- Tracewski, L., L. Bastin, and C. C. Fonte. 2017. “Repurposing a Deep Learning Network to Filter and Classify Volunteered Photographs for Land Cover and Land Use Characterization.”
+  - https://www.tandfonline.com/doi/pdf/10.1080/10095020.2017.1373955
+
+## [Citizens as sensors: the world of volunteered geography](https://link.springer.com/article/10.1007/s10708-007-9111-y)
+- 出版: GeoJournal, 2007, 69.4: 211-221
+- Author: Michael F. Goodchild
+- 読んだ日：2018/12/06
+- ★★☆☆☆
+1. どんなもの？
+- 市民科学の広がりをWeb2.0やGPS、OSMなどに触れながら述べていく解説論文。
+- 引用数が3000を超えていたので読んだ。
+
+2. 先行研究と比べてどこがすごい？
+- 解説論文？
+
+3. 技術や手法のキモはどこ？
+- 解説論文？
+
+4. どうやって有効だと検証した？
+- 解説論文？
+
+5. 議論はある？
+- 市民科学の広がりに言及するときに引用するのか？
+
+6. 次に読むべき論文は？
+- 特になし
+
+## [The Role of Citizen Science in Earth Observation](https://www.mdpi.com/2072-4292/9/4/357)
+- 出版: Remote Sens. 2017, 9(4), 357
+- Author: Steffen Fritz, Cidália Costa Fonte, and Linda See
+- 読んだ日：2018/12/06
+- ★★☆☆☆
+
+1. どんなもの？
+- 市民科学と地球観測のレビュー。
+
+2. 先行研究と比べてどこがすごい？
+- レビュー論文。
+
+3. 技術や手法のキモはどこ？
+- レビュー論文。
+
+4. どうやって有効だと検証した？
+- レビュー論文。
+
+5. 議論はある？
+- 2.2.4 Land Coverと3. The Future Outlook for Citizen Science and Earth Observationのみを読んだ。
+- Land Coverで見落としている論文が無いかと期待したが、特になかった。
+
+6. 次に読むべき論文は？
+- 特になし。
 
 ## [A global reference database of crowdsourced cropland data collected using the Geo-Wiki platform](https://www.nature.com/articles/sdata2017136)
 - 出版:Scientific Data volume 4, Article number: 170136 (2017) 
