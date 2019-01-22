@@ -17,9 +17,18 @@ footer: Copyright © 2018-Jin Katagi.
 # My skills.
 * Python
 * Linux
-* Remote Sensing (GRASS GIS, QGIS, GDAL, Google Earth Engine)
-* Kotlin (for Android)
-* Vue.js (with Vuex)
+
+## Remote Sensing
+* GRASS GIS
+* QGIS
+* GDAL
+* Google Earth Engine
+
+## Front-end
+* Vue.js (1 year for an application)
+
+## Server side
+* Ruby on Rails (1 year for an application)
 
 # My certificates.
 * AP (応用情報技術者) : 2017/Dec.
@@ -32,7 +41,14 @@ footer: Copyright © 2018-Jin Katagi.
 This map is used in various fields, for example, for input data of climate change simulation, agliculture use, disaster prevention, etc.
 Combined with satelitte images and Machine Learning method, I try to create more accurate map.
 
-* Development of rephotography application
+* [Development of a multi-temporal and multi-points database for land cover study](http://www.sapc.jaxa.jp/use/rd/saclaj/)
+
+To make a land cover map, we use many training data and validation data (called together as reference data).
+We need to gather a lot of reference data, but it takes a hight cost.
+To reduce it's cost, we are developing a multi-temporal and multi-points database for land cover study called "SACLAJ".
+My aim is to develop this databese in cooperatoin with citizens.
+
+* Development of a rephotography application
 
 Land cover changes day by day. One purpose of creating Land Cover Map is to monitor such daily changing land cover. 
 What is important at that time is to take photo land cover change at the same spot. 
