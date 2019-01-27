@@ -12,7 +12,6 @@ footer: Copyright © 2018-Jin Katagi.
 * Jin KATAGI
 * Love OSS (FOSS4G), Linux, and Programming.
 * [GitHub](https://github.com/jkatagi)
-* [Twitter](https://twitter.com/jk_3or7/)
 
 # My skills.
 * Python
