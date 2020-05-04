@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: ./bird.jpg
+heroImage: ./bird-icon.jpeg
 heroText: jkatagi's pages
 actionText: Google Earth Engine入門 -ゼロから始める衛星画像解析-
 actionLink: /contents/google_earth_engine/
