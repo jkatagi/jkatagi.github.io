@@ -13,25 +13,34 @@ footer: Copyright © 2018-Jin Katagi.
 * Love OSS (FOSS4G), Linux, and Programming.
 * [GitHub](https://github.com/jkatagi)
 
-# My skills.
+# Skills
 * Python
 * Linux
+* Go
 
-## Remote Sensing
+# Employment history
+- Apr 2019 - current : software engineer at Gunosy Inc.
+
+# Education
+- Apr 2017 - Mar 2019 : University of Tsukuba, Graduate school of science and technology
+- Apr 2013 - Mar 2017 : University of Tsukuba, College of agro-biological resource sciences
+
+# Certificates
+* AP (応用情報技術者) : Dec 2017
+* FE (基本情報技術者) : Nov 2015
+
+## Skills acquired in my college
+### Remote Sensing
 * GRASS GIS
 * QGIS
 * GDAL
 * Google Earth Engine
 
-## Front-end
+### Front-end
 * Vue.js (1 year for an application)
 
-## Server side
+### Server side
 * Ruby on Rails (1 year for an application)
 
-# My certificates.
-* AP (応用情報技術者) : 2017/Dec.
-* FE (基本情報技術者) : 2015/Nov.
-
-# Research topic.
+# Research topic
 - moved to  [about research topics in college](/contents/about_research_in_college/)
