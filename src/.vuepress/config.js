@@ -11,8 +11,12 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Google Earth Engine入門-ゼロから始める衛星画像解析-', link: '/contents/google_earth_engine/' },
-            { text: '論文メモ', link: '/contents/paper_review/' },
+            {
+                text: 'Contents', items: [
+                    { text: 'Google Earth Engine入門-ゼロから始める衛星画像解析-', link: '/contents/google_earth_engine/' },
+                    { text: 'About research in college', link: '/contents/about_research_in_college/' },
+                ]
+            },
             { text: 'Github', link: 'https://github.com/jkatagi' }
         ],
         sidebar: {
