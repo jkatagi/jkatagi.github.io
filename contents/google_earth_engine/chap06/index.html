@@ -4,20 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>第6章：土地利用をマッピング | jkatagi&#39;s pages</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
     <meta name="description" content="">
-    
-    
-    <link rel="preload" href="/assets/css/0.styles.e401d464.css" as="style"><link rel="preload" href="/assets/js/app.0ef4db53.js" as="script"><link rel="preload" href="/assets/js/10.786617f4.js" as="script"><link rel="prefetch" href="/assets/js/11.db950d80.js"><link rel="prefetch" href="/assets/js/12.20bb393d.js"><link rel="prefetch" href="/assets/js/13.61718a57.js"><link rel="prefetch" href="/assets/js/14.f1dc02a4.js"><link rel="prefetch" href="/assets/js/15.aa0d28ad.js"><link rel="prefetch" href="/assets/js/16.bba2ce7d.js"><link rel="prefetch" href="/assets/js/17.899aaed6.js"><link rel="prefetch" href="/assets/js/2.6748fda6.js"><link rel="prefetch" href="/assets/js/3.d8b14ded.js"><link rel="prefetch" href="/assets/js/4.9145dbb5.js"><link rel="prefetch" href="/assets/js/5.09ba1832.js"><link rel="prefetch" href="/assets/js/6.a1abe667.js"><link rel="prefetch" href="/assets/js/7.41ff3ec7.js"><link rel="prefetch" href="/assets/js/8.cefa8401.js"><link rel="prefetch" href="/assets/js/9.002439d4.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.e401d464.css">
+    <link rel="preload" href="/assets/css/0.styles.aa6d0e5c.css" as="style"><link rel="preload" href="/assets/js/app.7c234b18.js" as="script"><link rel="preload" href="/assets/js/2.762f5a7d.js" as="script"><link rel="preload" href="/assets/js/12.ebf359c3.js" as="script"><link rel="prefetch" href="/assets/js/10.bab11347.js"><link rel="prefetch" href="/assets/js/11.16d66b9f.js"><link rel="prefetch" href="/assets/js/13.6c98a10c.js"><link rel="prefetch" href="/assets/js/14.6d9024a1.js"><link rel="prefetch" href="/assets/js/15.60d01acc.js"><link rel="prefetch" href="/assets/js/16.5d129c74.js"><link rel="prefetch" href="/assets/js/17.bdfdcdbe.js"><link rel="prefetch" href="/assets/js/18.8a87f064.js"><link rel="prefetch" href="/assets/js/19.df689c41.js"><link rel="prefetch" href="/assets/js/3.7bad0b16.js"><link rel="prefetch" href="/assets/js/4.df064526.js"><link rel="prefetch" href="/assets/js/5.b7832427.js"><link rel="prefetch" href="/assets/js/6.c8610b50.js"><link rel="prefetch" href="/assets/js/7.0b6682e1.js"><link rel="prefetch" href="/assets/js/8.bdb676a1.js"><link rel="prefetch" href="/assets/js/9.0b69830a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa6d0e5c.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">jkatagi's pages</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/contents/google_earth_engine/" class="nav-link router-link-active">Google Earth Engine入門-ゼロから始める衛星画像解析-</a></div><div class="nav-item"><a href="/contents/paper_review/" class="nav-link">論文メモ</a></div><div class="nav-item"><a href="https://github.com/jkatagi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">jkatagi's pages</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/contents/google_earth_engine/" class="nav-link router-link-active">
+  Google Earth Engine入門-ゼロから始める衛星画像解析-
+</a></div><div class="nav-item"><a href="/contents/paper_review/" class="nav-link">
+  論文メモ
+</a></div><div class="nav-item"><a href="https://github.com/jkatagi" target="_blank" rel="noopener noreferrer" class="nav-link external">
   Github
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/contents/google_earth_engine/" class="nav-link router-link-active">Google Earth Engine入門-ゼロから始める衛星画像解析-</a></div><div class="nav-item"><a href="/contents/paper_review/" class="nav-link">論文メモ</a></div><div class="nav-item"><a href="https://github.com/jkatagi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/contents/google_earth_engine/" class="nav-link router-link-active">
+  Google Earth Engine入門-ゼロから始める衛星画像解析-
+</a></div><div class="nav-item"><a href="/contents/paper_review/" class="nav-link">
+  論文メモ
+</a></div><div class="nav-item"><a href="https://github.com/jkatagi" target="_blank" rel="noopener noreferrer" class="nav-link external">
   Github
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>第6章：土地利用をマッピング</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/contents/google_earth_engine/chap06/#土地被覆図とは" class="sidebar-link">土地被覆図とは</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#教師なし分類" class="sidebar-link">教師なし分類</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#まとめ" class="sidebar-link">まとめ</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#練習問題" class="sidebar-link">練習問題</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#コラム：大気補正・地形補正" class="sidebar-link">コラム：大気補正・地形補正</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#コラム：精度評価の話" class="sidebar-link">コラム：精度評価の話</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="第6章：土地利用をマッピング"><a href="#第6章：土地利用をマッピング" aria-hidden="true" class="header-anchor">#</a> 第6章：土地利用をマッピング</h1> <p>本章では土地利用を記述した地図である土地利用・土地被覆図（以下，まとめて土地被覆図）を作成していきます。
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>第6章：土地利用をマッピング</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/contents/google_earth_engine/chap06/#土地被覆図とは" class="sidebar-link">土地被覆図とは</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#教師なし分類" class="sidebar-link">教師なし分類</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#まとめ" class="sidebar-link">まとめ</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#練習問題" class="sidebar-link">練習問題</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#コラム：大気補正・地形補正" class="sidebar-link">コラム：大気補正・地形補正</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/contents/google_earth_engine/chap06/#コラム：精度評価の話" class="sidebar-link">コラム：精度評価の話</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="第6章：土地利用をマッピング"><a href="#第6章：土地利用をマッピング" class="header-anchor">#</a> 第6章：土地利用をマッピング</h1> <p>本章では土地利用を記述した地図である土地利用・土地被覆図（以下，まとめて土地被覆図）を作成していきます。
 この地図は様々な研究の入力データとして使われている重要な地図です。
-実際に作成してみることで，その問題点を探ってみましょう。</p> <h2 id="土地被覆図とは"><a href="#土地被覆図とは" aria-hidden="true" class="header-anchor">#</a> 土地被覆図とは</h2> <p>土地利用図は先程も述べましたが、どのように土地が利用されているかを記述した地図です。
+実際に作成してみることで，その問題点を探ってみましょう。</p> <h2 id="土地被覆図とは"><a href="#土地被覆図とは" class="header-anchor">#</a> 土地被覆図とは</h2> <p>土地利用図は先程も述べましたが、どのように土地が利用されているかを記述した地図です。
 この地図は目的によって記述してあるカテゴリが異なりますが、一般的に10数カテゴリが多いです。
 土地利用図は、手で作成することも可能です。
 その一例として中学の地理で習った地形図が挙げられます。
@@ -31,14 +43,14 @@
 機械学習とは、（書きかけ）
 機械学習は教師なし分類と教師あり分類の2つに分けられます。
 教師なし分類は教師情報（ここではその土地が何かを人間が教える情報）を用いずに分類する手法です。
-一方で教師あり分類は教師情報を用いて分類する手法です。</p> <p>まずは教師なし分類から試していきましょう。</p> <h2 id="教師なし分類"><a href="#教師なし分類" aria-hidden="true" class="header-anchor">#</a> 教師なし分類</h2> <p>Sentinel-2衛星を用いて土地被覆図を作成していきます。
+一方で教師あり分類は教師情報を用いて分類する手法です。</p> <p>まずは教師なし分類から試していきましょう。</p> <h2 id="教師なし分類"><a href="#教師なし分類" class="header-anchor">#</a> 教師なし分類</h2> <p>Sentinel-2衛星を用いて土地被覆図を作成していきます。
 Sentinel-2は光学衛星なのでまずは雲の影響を取り除かなければなりません。
 GEEのExamplesの中に，CloudMasking → Sentinel2という例があります。
 このスクリプトを改造していきましょう。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// Load Sentinel-2 TOA reflectance data.</span>
 <span class="token keyword">var</span> s2 <span class="token operator">=</span> ee<span class="token punctuation">.</span><span class="token function">ImageCollection</span><span class="token punctuation">(</span><span class="token string">'COPERNICUS/S2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Function to mask clouds using the Sentinel-2 QA band.</span>
-<span class="token keyword">function</span> <span class="token function">maskS2clouds</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">function</span> <span class="token function">maskS2clouds</span><span class="token punctuation">(</span><span class="token parameter">image</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">var</span> qa <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'QA60'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
   <span class="token comment">// Bits 10 and 11 are clouds and cirrus, respectively.</span>
@@ -63,7 +75,7 @@ GEEのExamplesの中に，CloudMasking → Sentinel2という例があります�
 <span class="token keyword">var</span> roi <span class="token operator">=</span> ee<span class="token punctuation">.</span>Geometry<span class="token punctuation">.</span><span class="token function">Rectangle</span><span class="token punctuation">(</span><span class="token number">140.05</span><span class="token punctuation">,</span> <span class="token number">36.05</span><span class="token punctuation">,</span> <span class="token number">140.40</span><span class="token punctuation">,</span> <span class="token number">36.25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// Display the results.</span>
 Map<span class="token punctuation">.</span><span class="token function">setCenter</span><span class="token punctuation">(</span><span class="token number">140.25</span><span class="token punctuation">,</span> <span class="token number">36.12</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>composite<span class="token punctuation">.</span><span class="token function">clip</span><span class="token punctuation">(</span>roi<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>bands<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'B3'</span><span class="token punctuation">,</span> <span class="token string">'B2'</span><span class="token punctuation">,</span> <span class="token string">'B1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> min<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">0.3</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>composite<span class="token punctuation">.</span><span class="token function">clip</span><span class="token punctuation">(</span>roi<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>bands<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'B3'</span><span class="token punctuation">,</span> <span class="token string">'B2'</span><span class="token punctuation">,</span> <span class="token string">'B1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> min<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> max<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><p>対象領域の追加と緯度経度の変更以外はGEEのExampleのままです。
 軽く説明をしていきます。
 5行目でSentinel-2の雲マスク処理関数を定義しています。
@@ -78,7 +90,7 @@ Bitでも11Bitでもないときに1（＝雲がない）を，それ以外を0�
 <span class="token keyword">var</span> s2 <span class="token operator">=</span> ee<span class="token punctuation">.</span><span class="token function">ImageCollection</span><span class="token punctuation">(</span><span class="token string">'COPERNICUS/S2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Function to mask clouds using the Sentinel-2 QA band.</span>
-<span class="token keyword">function</span> <span class="token function">maskS2clouds</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">function</span> <span class="token function">maskS2clouds</span><span class="token punctuation">(</span><span class="token parameter">image</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">var</span> qa <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'QA60'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
   <span class="token comment">// Bits 10 and 11 are clouds and cirrus, respectively.</span>
@@ -104,9 +116,9 @@ Bitでも11Bitでもないときに1（＝雲がない）を，それ以外を0�
 <span class="token keyword">var</span> input <span class="token operator">=</span> composite<span class="token punctuation">.</span><span class="token function">clip</span><span class="token punctuation">(</span>roi<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// Make the training dataset.</span>
 <span class="token keyword">var</span> training <span class="token operator">=</span> input<span class="token punctuation">.</span><span class="token function">sample</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  region<span class="token punctuation">:</span> roi<span class="token punctuation">,</span>
-  scale<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
-  numPixels<span class="token punctuation">:</span> <span class="token number">50</span>
+  region<span class="token operator">:</span> roi<span class="token punctuation">,</span>
+  scale<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  numPixels<span class="token operator">:</span> <span class="token number">50</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Instantiate the clusterer and train it.</span>
@@ -117,14 +129,14 @@ Bitでも11Bitでもないときに1（＝雲がない）を，それ以外を0�
 
 <span class="token comment">// Display the results.</span>
 Map<span class="token punctuation">.</span><span class="token function">setCenter</span><span class="token punctuation">(</span><span class="token number">140.25</span><span class="token punctuation">,</span> <span class="token number">36.12</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>input<span class="token punctuation">,</span> <span class="token punctuation">{</span>bands<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'B3'</span><span class="token punctuation">,</span> <span class="token string">'B2'</span><span class="token punctuation">,</span> <span class="token string">'B1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> min<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">0.3</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>input<span class="token punctuation">,</span> <span class="token punctuation">{</span>bands<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'B3'</span><span class="token punctuation">,</span> <span class="token string">'B2'</span><span class="token punctuation">,</span> <span class="token string">'B1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> min<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> max<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token function">randomVisualizer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><p>GEEではkMeansという手法が実装されています。
 ここでは50点のサンプル点を取り（30-34行目），その情報をもとに3クラスで学習をしています（37行目）。
 その後40行目で分類をし，45行目で可視化しています。
 randomVisualizer()メソッドはカラーパレットを適当に決めるときのメソッドです。</p> <p>結果は霞ヶ浦が分類されているカテゴリが水域で，森や畑地が同じカテゴリに分類され，都市などはその他のカテゴリとして分類されています。
 ここで筑波山の斜面に着目すると，霞ヶ浦と同じカテゴリに分類されていることがわかります。
-これは斜面が日影の影響で暗くなり，水面と類似した反射特性を示すためです。</p> <h1 id="教師あり分類"><a href="#教師あり分類" aria-hidden="true" class="header-anchor">#</a> 教師あり分類</h1> <p>次に教師あり分類を試してみます。
+これは斜面が日影の影響で暗くなり，水面と類似した反射特性を示すためです。</p> <h1 id="教師あり分類"><a href="#教師あり分類" class="header-anchor">#</a> 教師あり分類</h1> <p>次に教師あり分類を試してみます。
 ここでは1:水域，2:都市,3:植生,4:その他として教師点を取得していきます。
 教師点の取得はマーカーを用います。
 マーカーは地図の左上のバルーンマークをクリックします。
@@ -145,7 +157,7 @@ layerという文字が現れるのでクリックします。
 <span class="token keyword">var</span> s2 <span class="token operator">=</span> ee<span class="token punctuation">.</span><span class="token function">ImageCollection</span><span class="token punctuation">(</span><span class="token string">'COPERNICUS/S2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Function to mask clouds using the Sentinel-2 QA band.</span>
-<span class="token keyword">function</span> <span class="token function">maskS2clouds</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">function</span> <span class="token function">maskS2clouds</span><span class="token punctuation">(</span><span class="token parameter">image</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">var</span> qa <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'QA60'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
   <span class="token comment">// Bits 10 and 11 are clouds and cirrus, respectively.</span>
@@ -171,44 +183,44 @@ layerという文字が現れるのでクリックします。
 <span class="token keyword">var</span> input <span class="token operator">=</span> composite<span class="token punctuation">.</span><span class="token function">clip</span><span class="token punctuation">(</span>roi<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// Make the training dataset.</span>
 <span class="token keyword">var</span> training <span class="token operator">=</span> input<span class="token punctuation">.</span><span class="token function">sample</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  region<span class="token punctuation">:</span> roi<span class="token punctuation">,</span>
-  scale<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
-  numPixels<span class="token punctuation">:</span> <span class="token number">50</span>
+  region<span class="token operator">:</span> roi<span class="token punctuation">,</span>
+  scale<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  numPixels<span class="token operator">:</span> <span class="token number">50</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Cluster the input using the trained clusterer.</span>
 
 <span class="token comment">// Display the results.</span>
 Map<span class="token punctuation">.</span><span class="token function">setCenter</span><span class="token punctuation">(</span><span class="token number">140.25</span><span class="token punctuation">,</span> <span class="token number">36.12</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>input<span class="token punctuation">,</span> <span class="token punctuation">{</span>bands<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'B3'</span><span class="token punctuation">,</span> <span class="token string">'B2'</span><span class="token punctuation">,</span> <span class="token string">'B1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> min<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">0.3</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>input<span class="token punctuation">,</span> <span class="token punctuation">{</span>bands<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'B3'</span><span class="token punctuation">,</span> <span class="token string">'B2'</span><span class="token punctuation">,</span> <span class="token string">'B1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> min<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> max<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 
 <span class="token keyword">var</span> training_points <span class="token operator">=</span> Water<span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>Urban<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>Vegetation<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>Other<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">var</span> bands <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'B1'</span><span class="token punctuation">,</span> <span class="token string">'B2'</span><span class="token punctuation">,</span> <span class="token string">'B3'</span><span class="token punctuation">,</span> <span class="token string">'B4'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
 <span class="token keyword">var</span> training <span class="token operator">=</span> input<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span>bands<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sampleRegions</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  collection<span class="token punctuation">:</span> training_points<span class="token punctuation">,</span> 
-  properties<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'landcover'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
-  scale<span class="token punctuation">:</span> <span class="token number">10</span>
+  collection<span class="token operator">:</span> training_points<span class="token punctuation">,</span> 
+  properties<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'landcover'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+  scale<span class="token operator">:</span> <span class="token number">10</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token keyword">var</span> classifier <span class="token operator">=</span> ee<span class="token punctuation">.</span>Classifier<span class="token punctuation">.</span><span class="token function">randomForest</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">train</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  features<span class="token punctuation">:</span> training<span class="token punctuation">,</span> 
-  classProperty<span class="token punctuation">:</span> <span class="token string">'landcover'</span><span class="token punctuation">,</span> 
-  inputProperties<span class="token punctuation">:</span> bands<span class="token punctuation">,</span>
+  features<span class="token operator">:</span> training<span class="token punctuation">,</span> 
+  classProperty<span class="token operator">:</span> <span class="token string">'landcover'</span><span class="token punctuation">,</span> 
+  inputProperties<span class="token operator">:</span> bands<span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token keyword">var</span> classified <span class="token operator">=</span> input<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span>bands<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">classify</span><span class="token punctuation">(</span>classifier<span class="token punctuation">)</span><span class="token punctuation">;</span>
-Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>classified<span class="token punctuation">,</span> <span class="token punctuation">{</span>min<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span> palette<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'blue'</span><span class="token punctuation">,</span> <span class="token string">'red'</span><span class="token punctuation">,</span> <span class="token string">'green'</span><span class="token punctuation">,</span> <span class="token string">'yellow'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span> 
-</code></pre></div><h2 id="まとめ"><a href="#まとめ" aria-hidden="true" class="header-anchor">#</a> まとめ</h2> <h2 id="練習問題"><a href="#練習問題" aria-hidden="true" class="header-anchor">#</a> 練習問題</h2> <h2 id="コラム：大気補正・地形補正"><a href="#コラム：大気補正・地形補正" aria-hidden="true" class="header-anchor">#</a> コラム：大気補正・地形補正</h2> <h2 id="コラム：精度評価の話"><a href="#コラム：精度評価の話" aria-hidden="true" class="header-anchor">#</a> コラム：精度評価の話</h2></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
-        ←
-        <a href="/contents/google_earth_engine/chap05/" class="prev">
-          第5章：夜間光の解析
-        </a></span> <span class="next"><a href="/contents/google_earth_engine/chap07/">
-          第7章：マイクロ波による解析
-        </a>
-        →
-      </span></p></div> </div> <!----></div></div>
-    <script src="/assets/js/app.0ef4db53.js" defer></script><script src="/assets/js/10.786617f4.js" defer></script>
+Map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>classified<span class="token punctuation">,</span> <span class="token punctuation">{</span>min<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> max<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span> palette<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'blue'</span><span class="token punctuation">,</span> <span class="token string">'red'</span><span class="token punctuation">,</span> <span class="token string">'green'</span><span class="token punctuation">,</span> <span class="token string">'yellow'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span> 
+</code></pre></div><h2 id="まとめ"><a href="#まとめ" class="header-anchor">#</a> まとめ</h2> <h2 id="練習問題"><a href="#練習問題" class="header-anchor">#</a> 練習問題</h2> <h2 id="コラム：大気補正・地形補正"><a href="#コラム：大気補正・地形補正" class="header-anchor">#</a> コラム：大気補正・地形補正</h2> <h2 id="コラム：精度評価の話"><a href="#コラム：精度評価の話" class="header-anchor">#</a> コラム：精度評価の話</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/contents/google_earth_engine/chap05/" class="prev">
+        第5章：夜間光の解析
+      </a></span> <span class="next"><a href="/contents/google_earth_engine/chap07/">
+        第7章：マイクロ波による解析
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7c234b18.js" defer></script><script src="/assets/js/2.762f5a7d.js" defer></script><script src="/assets/js/12.ebf359c3.js" defer></script>
   </body>
 </html>
