@@ -13,11 +13,6 @@ footer: Copyright © 2018-Jin Katagi.
 * Love OSS (FOSS4G), Linux, and Programming.
 * [GitHub](https://github.com/jkatagi)
 
-## Skills
-* Python
-* Linux
-* Go
-
 ## Employment history
 - Apr 2019 - current : software engineer at Gunosy Inc.
 
@@ -32,15 +27,19 @@ footer: Copyright © 2018-Jin Katagi.
 * AP (応用情報技術者) : Dec 2017
 * FE (基本情報技術者) : Nov 2015
 
-## Skills acquired in my college
+## Skills
+I can
+- write Golang api server (I like goa framework)
+- manage infrastructe code using Terraform
+- use AWS services (Lambda, DynamoDB, ECS etc)
+- write SQL
+- write Frontend code by using TypeScript (both Vue.js and React) (a little)
+
+I mainly write codes as a server side engineer using Golang.
+I also have some knowledge about Remote sensing and FOSS4G.
+
 ### Remote Sensing
 * GRASS GIS
 * QGIS
 * GDAL
 * Google Earth Engine
-
-### Front-end
-* Vue.js (1 year for an application)
-
-### Server side
-* Ruby on Rails (1 year for an application)
