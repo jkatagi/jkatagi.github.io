@@ -9,7 +9,7 @@ footer: Copyright © 2018-Jin Katagi.
 ---
 ## Who am I?
 
-* Jin KATAGI
+* Jin Miyayama (Katagi)
 * Love OSS (FOSS4G), Linux, and Programming.
 * [GitHub](https://github.com/jkatagi)
 
