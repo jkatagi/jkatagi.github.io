@@ -14,7 +14,8 @@ footer: Copyright © 2018-Jin Katagi.
 * [GitHub](https://github.com/jkatagi)
 
 ## Employment history
-- Apr 2019 - current : software engineer at Gunosy Inc.
+- Feb 2021 - current : software engineer at UMITRON.
+- Apr 2019 - Dec 2020 : software engineer at Gunosy Inc.
 
 ## Education
 - Apr 2017 - Mar 2019 : University of Tsukuba, Graduate school of science and technology
