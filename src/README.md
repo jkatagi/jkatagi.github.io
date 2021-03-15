@@ -2,19 +2,18 @@
 home: true
 heroImage: ./bird-icon.jpeg
 heroText: jkatagi's pages
-actionText: Google Earth Engine入門 -ゼロから始める衛星画像解析-
-actionLink: /contents/google_earth_engine/
 description: Welcome to my homepage!
 footer: Copyright © 2018-Jin Katagi.
 ---
 ## Who am I?
 
-* Jin KATAGI
+* Jin Miyayama (Katagi)
 * Love OSS (FOSS4G), Linux, and Programming.
 * [GitHub](https://github.com/jkatagi)
 
 ## Employment history
-- Apr 2019 - current : software engineer at Gunosy Inc.
+- Feb 2021 - current : software engineer at UMITRON.
+- Apr 2019 - Dec 2020 : software engineer at Gunosy Inc.
 
 ## Education
 - Apr 2017 - Mar 2019 : University of Tsukuba, Graduate school of science and technology
@@ -33,7 +32,7 @@ I can
 - manage infrastructe code using Terraform
 - use AWS services (Lambda, DynamoDB, ECS etc)
 - write SQL
-- write Frontend code by using TypeScript (both Vue.js and React) (a little)
+- write Frontend code by using TypeScript (mainly React)
 
 I mainly write codes as a server side engineer using Golang.
 I also have some knowledge about Remote sensing and FOSS4G.
@@ -43,3 +42,6 @@ I also have some knowledge about Remote sensing and FOSS4G.
 * QGIS
 * GDAL
 * Google Earth Engine
+
+## Contents
+- [Google Earth Engine入門 -ゼロから始める衛星画像解析-](/contents/google_earth_engine/)
