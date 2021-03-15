@@ -32,7 +32,7 @@ I can
 - manage infrastructe code using Terraform
 - use AWS services (Lambda, DynamoDB, ECS etc)
 - write SQL
-- write Frontend code by using TypeScript (both Vue.js and React) (a little)
+- write Frontend code by using TypeScript (mainly React)
 
 I mainly write codes as a server side engineer using Golang.
 I also have some knowledge about Remote sensing and FOSS4G.
