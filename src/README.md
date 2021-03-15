@@ -2,8 +2,6 @@
 home: true
 heroImage: ./bird-icon.jpeg
 heroText: jkatagi's pages
-actionText: Google Earth Engine入門 -ゼロから始める衛星画像解析-
-actionLink: /contents/google_earth_engine/
 description: Welcome to my homepage!
 footer: Copyright © 2018-Jin Katagi.
 ---
@@ -44,3 +42,6 @@ I also have some knowledge about Remote sensing and FOSS4G.
 * QGIS
 * GDAL
 * Google Earth Engine
+
+## Contents
+- [Google Earth Engine入門 -ゼロから始める衛星画像解析-](/contents/google_earth_engine/)
